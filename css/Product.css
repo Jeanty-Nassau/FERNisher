@@ -1,0 +1,426 @@
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+
+/*navigation bar...................................................*/
+nav{
+  display:flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: white;
+  z-index: 999;
+}
+#nav-menu{
+  display: flex;
+  align-items: center;
+  flex-grow: 0.2;
+  cursor: pointer;
+}
+#nav-menu:hover h1{
+  color: #FFB540;
+  fill: #FFB540;
+}
+#nav-menu:hover svg{
+  fill: #FFB540;
+}
+
+#nav-menu h1{
+  font-weight: 500;
+  font-size: 1.042vw;
+  padding-left: 0.694vw;
+}
+#nav-logo{
+  display: flex;
+  justify-content: center;
+  flex-grow: 0.8;
+  color: black;
+  text-decoration: none;
+}
+#nav-logo svg:hover{
+  cursor: pointer;
+}
+#nav-account{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+#nav-account:hover h1{
+  color: #FFB540;
+  fill: #FFB540;
+}
+#nav-account:hover svg{
+  fill: #FFB540;
+}
+#nav-account h1{
+  font-weight: 500;
+  font-size: 1.042vw;
+  padding-left: 0.694vw;
+}
+#nav-cart{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+#nav-cart:hover h1{
+  color: #FFB540;
+  fill: #FFB540;
+}
+#nav-cart:hover svg{
+  fill: #FFB540;
+}
+#nav-cart h1{
+  font-weight: 500;
+  font-size: 1.042vw;
+  padding-left: 0.694vw;
+}
+/*back-section...........................................................*/
+#back-section{
+  margin-top: 100px;
+  height: 10px;
+  padding: 0 8%;
+}
+#back-section #back-button{
+  display: block;
+  width: 60px;
+  transform: rotateZ(180deg);
+}
+#back-section #back-button:hover path{
+  fill:#FFB540;
+}
+/*Products.............................................................*/
+#products{
+  display: flex;
+  justify-content: space-between;
+  height: 780px;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+#product-images{
+  margin:5%;
+  width: 45%;
+  background-size: cover;
+  background-position: center;
+}
+
+#product-vl{
+  width: 1px;
+  margin: 4% 0;
+  background-color: #e5e5e5;
+}
+#product-info{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 5% 0 10%;
+}
+#product-name{
+  font-size: 10vw;
+  font-weight: 400;
+  font-family: Didot;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+#product-company{
+  margin-top: 0;
+}
+#product-detail{
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 1.25vw;
+  width: 100%;
+}
+#price-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#quantity{
+  background-color: white;
+}
+#quantity-select{
+  height: 42px;
+  width: 260px;
+  font-size: 1.25vw;
+  padding: 0.694vw 0.694vw;
+  background: white;
+  border: 1px solid black;
+  text-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+#quantity-select:focus{
+  outline: none;
+}
+#product-price{
+  font-size: 48px;
+  font-weight: 700;
+  font-family: Didot;
+  text-align: right;
+}
+#add-button{
+  display: flex;
+  background-color: black;
+  height: 50px;
+  width: 350px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+#add-button:hover{
+  background-color: white;
+  border: 1px solid black;
+}
+#add-button:hover h3{
+  color: black;
+}
+#add-button h3{
+  font-size: 1.25vw;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+/**/
+/*section 5............................................................*/
+
+#section5{
+  position: relative;
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#section5-img-wrapper{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  width: 120%;
+  left: -10%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+#section5-square-img1{
+  width: 23vw;
+  height: 35vw;
+  background-image: url(/Assets/images/main5.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 200px 200px;
+}
+#section5-content{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+#section5-content input[type=text]{
+  font-size: 0.833vw;
+  font-weight: 500;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+  margin: 0.694vw 0;
+}
+#section5-content input[type=text]:focus{
+  outline: none;
+}
+#section5-content h1{
+  font-size: 0.833vw;
+  font-weight: 500;
+}
+
+#section5-square-img2{
+  width: 23vw;
+  height: 35vw;
+  background-image: url(/Assets/images/main7.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius:200px 200px  0 0 ;
+}
+
+#section5-square-img3{
+  width: 23vw;
+  height: 35vw;
+  background-image: url(/Assets/images/main10.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 200px 200px;
+}
+
+ #section5-content #section5-heading{
+  font-size: 5vw;
+  font-family: Didot;
+  font-weight: 400;
+  z-index: 5;
+  margin-bottom: 0;
+}
+#section5-content label{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.694vw;
+  color: #b9b9b9;
+}
+#section5-see-button{
+  bottom: 5px;
+  align-items: center;
+  display: flex;
+
+  transition: 0.1s text-decoration ease;
+}
+#section5-see-button:hover{
+  color: #FFB540;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#section5-see-button:hover path{
+  fill: #FFB540;
+}
+#section5-see-button h1{
+  font-size: 2.5vw;
+  font-family: Didot;
+  font-weight: 400;
+  width: 100px;
+}
+
+/*footer...............................................................*/
+footer{
+  border-top: 1px solid #e5e5e5;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5% 2% 5%;
+  border-bottom: 1px solid #e5e5e5;
+}
+#footer-top h1{
+  font-size: 0.833vw;
+  font-weight: 500;
+  transition: 0.2s text-decoration ease ;
+  cursor: pointer;
+}
+#footer-top h1:hover{
+  text-decoration: underline;
+}
+
+#footer-bottom{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+#footer-bottom h1{
+  font-size: 1.111vw;
+  font-weight: 500;
+  color: #b9b9b9;
+}
+#social-icons{
+  max-height: 50px;
+  display: flex;
+  max-width: 250px;
+}
+#social-icons svg{
+  padding: 0.694vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  transition: 0.2s width ease, 0.2s height ease ;
+}
+#social-icons svg:hover{
+  cursor: pointer;
+  padding: auto;
+  width: 48px;
+  height: 48px;
+}
+/*menu.......................................................................*/
+
+#menu-section {
+  display: none;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  
+}
+#menu-section nav{
+  display:flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
+  z-index: 0;
+  background-color: black;
+  border: none;
+}
+#menu-section #nav-close {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#menu-section #nav-close:hover svg{
+  fill: #FFB540;
+}
+#menu-section #nav-close:hover h1{
+  color: #FFB540;
+}
+
+#menu-section #close-icon{
+  fill: white;
+}
+#menu-section #nav-close h1{
+  font-weight: 500;
+  font-size: 1.042vw;
+  padding-left: 0.694vw;
+  color: white;
+}
+#menu-section #nav-logo{
+  display: flex;
+  justify-content: left;
+  flex-grow: 0.55;
+}
+
+#menu-section #menu-list{
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10%;
+  width: 100%;
+
+}
+
+#menu-section .menu-item{
+  min-width: 290px;
+  color: white;
+  font-family: Didot;
+  font-weight: 400;
+  font-size: 6.667vw;
+  text-decoration: none;
+}
+#menu-section .menu-item:hover{
+  cursor: pointer;
+  color: #FFB540;
+}

@@ -1,0 +1,653 @@
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+
+/*navigation bar...................................................*/
+nav{
+  display:flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: white;
+  z-index: 999;
+}
+#nav-menu{
+  display: flex;
+  align-items: center;
+  flex-grow: 0.2;
+  cursor: pointer;
+}
+#nav-menu:hover h1{
+  color: #FFB540;
+  fill: #FFB540;
+}
+#nav-menu:hover svg{
+  fill: #FFB540;
+}
+
+#nav-menu h1{
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 10px;
+}
+#nav-logo{
+  display: flex;
+  justify-content: center;
+  flex-grow: 0.8;
+  color: black;
+  text-decoration: none;
+}
+#nav-logo svg:hover{
+  cursor: pointer;
+}
+#nav-account{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+#nav-account:hover h1{
+  color: #FFB540;
+  fill: #FFB540;
+}
+#nav-account:hover svg{
+  fill: #FFB540;
+}
+#nav-account h1{
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 10px;
+}
+#nav-cart{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+#nav-cart:hover h1{
+  color: #FFB540;
+  fill: #FFB540;
+}
+#nav-cart:hover svg{
+  fill: #FFB540;
+}
+#nav-cart h1{
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 10px;
+}
+/*account-section1.........................................................*/
+
+#account-section1{
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 800px;
+}
+#account-section1 #account-img{
+  width: 50%;
+  position: relative;
+  background-image: url(/Assets/The\ Project_\ on\ Twitter.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#account-section1 #account-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+}
+
+#account-section1 #account-form h1{
+  font-size: 4.444vw;
+  font-weight: 400;
+  font-family: Didot;
+  margin: 0;
+}
+#account-section1 #account-form h2{
+  font-size: 0.833vw;
+  font-weight: 500;
+  color: #b9b9b9;
+}
+#account-section1 #account-form h2:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#account-section1 #register-button{
+  margin: 50px;;
+  background-color: black;
+  width:315px ;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#account-section1 #register-button:hover{
+
+  background-color: white;
+  border: 1px solid black;
+}
+#account-section1 #register-button:hover h1{
+  color: black;
+}
+#account-section1 #register-button h1{
+  font-size: 1.25vw;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#account-section1 #login-button{
+  margin: 50px;
+  background-color: white;
+  width:315px ;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid black;
+}
+#account-section1 #login-button:hover{
+  
+  background-color: black;
+}
+#account-section1 #login-button:hover h1{
+  color: white;
+}
+#account-section1 #login-button h1{
+  font-size: 1.25vw;
+  font-weight: 500;
+  color:black;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*account-section2.........................................................*/
+
+#account-section2{
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 800px;
+}
+#account-section2 #account-img{
+  width: 50%;
+  position: relative;
+  background-image: url(Assets/The\ Project_\ on\ Twitter.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#account-section2 #account-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+}
+
+#account-section2 #account-form h1{
+  font-size: 4.444vw;
+  font-weight: 400;
+  font-family: Didot;
+  margin: 10% 0;
+}
+
+#account-section2 #account-form a{
+  font-size: 24px;
+  font-weight: 500;
+  color: #b9b9b9;
+  text-decoration: none;
+}
+#account-section2 #account-form a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+#account-section2 #logout-button{
+  margin: 40% 0;
+  background-color: black;
+  width:315px ;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px;
+} 
+#account-section2 #logout-button:hover{
+  
+  background-color: white;
+  border: 1px solid black;
+}
+#account-section2 #logout-button:hover h1{
+  color: black;
+}
+#account-section2 #logout-button h1{
+  font-size: 1.25vw;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*vertical line........................................................*/
+#product-vl{
+  width: 1px;
+  margin: 5% 0;
+  margin-right: 50px;
+  background-color: #e5e5e5;
+}
+
+/*login section.........................................................*/
+
+#login-section{
+  margin: 80px 0;
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  height: 800px;
+}
+#login-section #login-img{
+  width: 50%;
+  position: relative;
+  background-image: url(/Assets/The\ Project_\ on\ Twitter.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#login-section #login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+}
+
+#login-section #login-form h1{
+  font-size: 4.444vw;
+  font-weight: 400;
+  font-family: Didot;
+  margin: 0;
+  text-align: center;
+  width: 500px;
+}
+#login-section #login-form h2{
+  font-size: 0.833vw;
+  font-weight: 500;
+  color: #b9b9b9;
+}
+#login-section #login-form h2:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+#login-section input{
+  width: 100%;
+  font-size: 0.972vw;
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+#login-section input:focus{
+  outline: none;
+}
+#login-section #login-button{
+  margin-top: 10px;
+  background-color: black;
+  width:315px ;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px;
+}
+#login-section #login-button:hover{
+  
+  background-color: white;
+  border: 1px solid black;
+}
+#login-section #login-button:hover h1{
+  color: black;
+}
+#login-section #login-button h1{
+  font-size: 1.25vw;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*register section.........................................................*/
+
+#register-section{
+  margin: 80px 0;
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  height: 800px;
+}
+#register-section #register-img{
+  width: 50%;
+  position: relative;
+  background-image: url(/Assets/The\ Project_\ on\ Twitter.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#register-section #register-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+}
+
+#register-section #register-form h1{
+  font-size: 4.444vw;
+  font-weight: 400;
+  font-family: Didot;
+  margin: 0;
+}
+#register-section #register-form h2{
+  font-size: 0.833vw;
+  font-weight: 500;
+  color: #b9b9b9;
+}
+#register-section #register-form h2:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+#register-section input{
+  width: 100%;
+  font-size: 0.972vw;
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+#register-section input:focus{
+  outline: none;
+}
+#register-section #register-button{
+  margin-top: 10px;
+  background-color: black;
+  width:315px ;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px;
+}
+#register-section #register-button:hover{
+  
+  background-color: white;
+  border: 1px solid black;
+}
+#register-section #register-button:hover h1{
+  color: black ;
+}
+#register-section #register-button h1{
+  font-size: 1.25vw;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+
+/*section 5............................................................*/
+
+#section5{
+  border-top: 1px solid #e5e5e5;
+  position: relative;
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#section5-img-wrapper{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  width: 120%;
+  left: -10%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+#section5-square-img1{
+  width: 23vw;
+  height: 35vw;
+  background-image: url(/Assets/images/main5.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 200px 200px;
+}
+#section5-content{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+#section5-content input[type=text]{
+  font-size: 0.833vw;
+  font-weight: 500;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+#section5-content input[type=text]:focus{
+  outline: none;
+}
+#section5-content h1{
+  font-size: 0.833vw;
+  font-weight: 500;
+}
+
+#section5-square-img2{
+  width: 23vw;
+  height: 35vw;
+  background-image: url(/Assets/images/main7.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius:200px 200px  0 0 ;
+}
+
+#section5-square-img3{
+  width: 23vw;
+  height: 35vw;
+  background-image: url(/Assets/images/main10.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 200px 200px;
+}
+
+ #section5-content #section5-heading{
+  font-size: 72px;
+  font-family: Didot;
+  font-weight: 400;
+  z-index: 5;
+  margin-bottom: 0;
+}
+#section5-content label{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  color: #b9b9b9;
+}
+#section5-see-button{
+  bottom: 5px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  width: 160px;
+  margin-top: 50px;
+
+  transition: 0.1s text-decoration ease;
+}
+#section5-see-button:hover{
+  color: #FFB540;
+  text-decoration: underline;
+}
+#section5-see-button:hover path{
+  fill: #FFB540;
+}
+#section5-see-button h1{
+  font-size: 36px;
+  font-family: Didot;
+  font-weight: 400;
+  width: 100px;
+  margin: 0;
+}
+/*footer...............................................................*/
+footer{
+  border-top: 1px solid #e5e5e5;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5% 2% 5%;
+  border-bottom: 1px solid #e5e5e5;
+}
+#footer-top h1{
+  font-size: 0.833vw;
+  font-weight: 500;
+  transition: 0.2s text-decoration ease ;
+  cursor: pointer;
+}
+#footer-top h1:hover{
+  text-decoration: underline;
+}
+
+#footer-bottom{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+#footer-bottom h1{
+  font-size: 16px;
+  font-weight: 500;
+  color: #b9b9b9;
+}
+#social-icons{
+  max-height: 50px;
+  display: flex;
+  max-width: 250px;
+}
+#social-icons svg{
+  padding: 10px;
+  width: 36px;
+  height: 36px;
+  transition: 0.2s width ease, 0.2s height ease ;
+}
+#social-icons svg:hover{
+  cursor: pointer;
+  padding: auto;
+  width: 48px;
+  height: 48px;
+}
+/*menu.......................................................................*/
+
+#menu-section {
+  display: none;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  
+}
+#menu-section nav{
+  display:flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
+  z-index: 0;
+  background-color: black;
+  border: none;
+}
+#menu-section #nav-close {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#menu-section #nav-close:hover svg{
+  fill: #FFB540;
+}
+#menu-section #nav-close:hover h1{
+  color: #FFB540;
+}
+
+#menu-section #close-icon{
+  fill: white;
+}
+#menu-section #nav-close h1{
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 10px;
+  color: white;
+}
+#menu-section #nav-logo{
+  display: flex;
+  justify-content: left;
+  flex-grow: 0.55;
+}
+
+#menu-section #menu-list{
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10%;
+  width: 100%;
+
+}
+
+#menu-section .menu-item{
+  min-width: 290px;
+  color: white;
+  font-family: Didot;
+  font-weight: 400;
+  font-size: 96px;
+  text-decoration: none;
+}
+#menu-section .menu-item:hover{
+  cursor: pointer;
+  color: #FFB540;
+}
